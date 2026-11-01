@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teskatl</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #ecf0f1;
+    --text-color: #2c3e50;
+    --border-color: #bdc3c7;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(135deg, black 0%, white 100%);
+    color: white;
+    padding: 3rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header .tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.new-container {
+    width: 300px;
+    height: 150px;
+    margin: 5px;
+}
+
+.resalto {
+    color: green;
+    font-weight: bold;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.entry-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Palabra del día</h1>
+            <!-- <p class="tagline">Entretenimiento y recursos</p> -->
+        </div>
+    </header>
+        <h1 class="main-title">Verbos intransitivos</h1>
+    <main>
+        <div class="new-container">
+          <p class="entry-title">😴 Kochi</p>
+          <p><span class="resalto">Ni</span>kochi = Duermo [yo]</p>
+          <p><span class="resalto">Ti</span>kochi = Duermes [tú]</p>
+          <p>Kochi = Duerme [él/ella]</p>
+          <p><span class="resalto">Ti</span>kochi<span class="resalto">h</span> = Dormimos [nosotros]</p>
+          <p><span class="resalto">In</span>kochi<span class="resalto">h</span> = Duermen [ustedes]</p>
+          <p>Kochi<span class="resalto">h</span> = Duermen [ellos/ellas]</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Palabra del día. All rights reserved.</p>
+    </footer>
+</body>
+</html>
